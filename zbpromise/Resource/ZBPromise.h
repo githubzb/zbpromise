@@ -6,7 +6,7 @@
 //  Copyright © 2018年 zb. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 zb. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 #ifndef PromiseHeader_h
 #define PromiseHeader_h
