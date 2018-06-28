@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "zbpromise"
-  s.version      = "0.0.1"
+  s.version      = "0.0.1.1"
   s.summary      = "Promise for Objc."
   s.description  = <<-DESC
                   Use Objc Promise.
