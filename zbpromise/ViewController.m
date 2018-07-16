@@ -23,7 +23,9 @@
 //            [promise resolve:@"Hello"];
             [promise reject:ZBError(@"fail!")];
         });
-    }].timeout(6).then(^id(NSString *say){
+    }].timeout(6).finally(^(id val){
+        NSLog(@"------finally:%@", val);
+    }).then(^id(NSString *say){
         NSLog(@"----say:%@", say);
         return say;
     }).zcatch(^id(NSError *error){

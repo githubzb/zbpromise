@@ -19,12 +19,12 @@
         if (callback) {
             callback(value);
         }
-        return nil;
+        return value;
     } onRejected:^id (NSError * error) {
         if (callback) {
             callback(error);
         }
-        return nil;
+        return error;
     }];
 }
 
