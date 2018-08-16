@@ -30,7 +30,11 @@ NSString * ZBReason(NSError *error){
     if ([error.domain isEqualToString:ZBPromiseErrorDomain]){
         return error.userInfo[@"reason"];
     }
-    return error.userInfo[NSLocalizedFailureReasonErrorKey];
+    NSString *reason = error.userInfo[NSLocalizedFailureReasonErrorKey];
+    if (reason.length>0) {
+        return reason;
+    }
+    return error.userInfo[NSLocalizedDescriptionKey];
 }
 
 BOOL ZBErrorIsTimeOut(NSError *error){
